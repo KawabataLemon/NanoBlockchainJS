@@ -34,7 +34,7 @@ class BlockChain {
     const previousBlock = this.getLatestBlock()
     const nextIndex = previousBlock.index + 1;
     const nextTimeStamp = new Date().getTime() / 1000
-    const nextHash = BlockManager.calcurateHash(nextIndex, previousBlock.hash, nextTimeStamp,blockData)
+    const nextHash = BlockChain.calcurateHash(nextIndex, previousBlock.hash, nextTimeStamp,blockData)
     
     const newBlock = new Block(nextIndex, previousBlock.hash, nextTimeStamp, blockData, nextHash)
     this.blocks.push(newBlock)
