@@ -14,7 +14,7 @@ class Block {
 
 module.exports.Block = Block
 
-class BlockManager {
+class BlockChain {
 
   // ブロク管理用オブジェクト
   constructor() {
@@ -53,4 +53,4 @@ class BlockManager {
 }
 
 
-module.exports.BlockManager = BlockManager
+module.exports.BlockChain = BlockChain

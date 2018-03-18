@@ -1,14 +1,14 @@
 
-const { Block, BlockManager } = require('./classes/Block')
+const { Block, BlockChain } = require('./classes/Block')
 
 // logginig
 const log = (obj) => { console.log(obj) }
 
-const manager = new BlockManager()
+const chain = new BlockChain()
 
 let generateBlockAndlogging = (data) => {
-  manager.generateNextBlock(data)
-  log(manager.blocks)  
+  chain.generateNextBlock(data)
+  log(chain.blocks)  
 }
 
 generateBlockAndlogging('hoge')
